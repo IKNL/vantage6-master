@@ -1,0 +1,30 @@
+application: {}
+environments:
+  acc: {}
+  dev: {}
+  prod:
+    allow_drop_all: 'False'
+    api_path: ''
+    rabbitmq:
+      user: guest
+      password: guest
+    description: Harukas test
+    ip: 0.0.0.0
+    jwt_secret_key: 86e24c5a-5eea-11eb-9044-b42e9931239df6
+    smtp:
+      port: 587
+      server: smtp.openxchange.eu
+      username: support@vantage6.ai
+      password: X~sTh[a|EO
+    logging:
+      backup_count: 5
+      datefmt: '%Y-%m-%d %H:%M:%S'
+      file: harukas.log
+      format: '%(asctime)s - %(name)-14s - %(levelname)-8s - %(message)s'
+      level: DEBUG
+      max_size: 1024
+      use_console: true
+    port: '5000'
+    uri: postgresql://v6admin:cTur7nVqwlhKPZU8fXxa@vantage6.postgres.database.azure.com:5432/harukas?sslmode=require
+    # uri: postgresql://someUser:changeme@database:5432/harukas
+  test: {}
