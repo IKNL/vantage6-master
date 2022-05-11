@@ -29,7 +29,7 @@ Docker
 .. automodule:: vantage6.node.docker.docker_manager
    :members:
 
-.. automodule:: vantage6.node.docker.network_manager
+.. automodule:: vantage6.common.docker.network_manager
    :members:
 
 .. automodule:: vantage6.node.docker.task_manager
